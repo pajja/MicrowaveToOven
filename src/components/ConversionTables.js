@@ -1,33 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 
-const Input = () => {
-  return (
-    <div className="ui input">
-      <input type="text" placeholder="Input..." />
-    </div>
-  );
-};
+const ConversionTables = () => {
+  const [term, setTerm] = useState("");
+  const [component, setComponent] = useState("");
 
-const Output = () => {
+  function returnOutput() {
+    setComponent(function () {
+      return <div>{term}</div>;
+    });
+  }
+
   return (
     <div>
-      <button className="compact ui button">Output</button>
+      <div className="ui input">
+        <input
+          type="text"
+          placeholder="Input..."
+          value={term}
+          onChange={(e) => setTerm(e.target.value)}
+        />
+      </div>
+      <button className="ui compact icon button" onClick={returnOutput}>
+        <i className="arrows alternate horizontal icon"></i>
+      </button>
+      <div class="ui visible message">
+        <p>{component}</p>
+      </div>
     </div>
   );
 };
-
-class ConversionTables extends React.Component {
-  render() {
-    return (
-      <div>
-        <div>{Input()}</div>
-        <button className="ui compact icon button">
-          <i className="arrows alternate horizontal icon"></i>
-        </button>
-        <div>{Output()}</div>
-      </div>
-    );
-  }
-}
 
 export default ConversionTables;

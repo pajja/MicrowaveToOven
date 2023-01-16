@@ -8,7 +8,7 @@ class Navigation extends React.Component {
         <div className="header item">
           <Link to="/">MicrowaveToOven CONVERTER</Link>
         </div>
-        ?
+
         <div className="item">
           <Link to="/">Home</Link>
         </div>
