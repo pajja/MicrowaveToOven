@@ -1,0 +1,53 @@
+#contents {
+  display: grid;
+  grid-template-rows: 90% 1fr 0.5fr 1fr 90%;
+}
+
+#inputs{
+  display: grid;
+  grid-template-columns: 5em 3em 5em 3em 5em 3em;
+  grid-template-rows: 0fr;
+  font-family: Tahoma, Verdana, sans-serif;
+  justify-content: center;
+  align-content: center; 
+  font-size: 110%;
+  margin: 10px
+}
+
+#time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#button-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#button {
+  background-color: rgb(236, 250, 251);
+  border: 3px dashed white;
+  font-size: 150%;
+  margin: 10px;
+}
+
+#button:hover {
+  background-color: rgb(197, 242, 245);
+}
+
+#outputs {
+  display: grid;
+  grid-template-columns: 3em 5em 3em 5em 3em 5em 3em;
+  grid-template-rows: 5.5em;
+  background-color: rgb(236, 250, 251);
+  font-family: Tahoma, Verdana, sans-serif;
+  justify-content: center;
+  align-content: center; 
+  font-size: 110%;
+}
+
+#bottom-color {
+  background-color: rgb(236, 250, 251);
+}

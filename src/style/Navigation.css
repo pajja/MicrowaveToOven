@@ -1,0 +1,22 @@
+a {
+  color: black;
+}
+
+#nav-header:hover {
+  color: black;
+}
+
+#nav-item:hover {
+  color: rgb(236, 250, 251);
+}
+
+#items {
+  position:absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+
+
+
+
